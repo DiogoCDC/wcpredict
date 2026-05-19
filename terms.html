@@ -7,39 +7,70 @@
   <meta name="description" content="Conditions générales d'utilisation, règles de jeu et achats in-app de l'application WorldCup Predict 2026.">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #cbd5e1; line-height: 1.7; padding: 32px 24px 64px; }
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #cbd5e1;
+      --muted: #94a3b8;
+      --dim: #64748b;
+      --heading: #f1f5f9;
+      --accent: #22c55e;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 32px 24px 64px;
+    }
     main { max-width: 720px; margin: 0 auto; }
-    a.back { color: #22c55e; text-decoration: none; font-size: 0.9rem; }
+    .site-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .site-header img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+    }
+    .site-header span {
+      color: var(--heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    a.back { color: var(--accent); text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 20px; }
     a.back:hover { text-decoration: underline; }
-    h1 { color: #f1f5f9; font-size: 2rem; font-weight: 800; margin-top: 24px; margin-bottom: 4px; }
-    .updated { color: #64748b; font-size: 0.85rem; margin-bottom: 40px; }
-    h2 { color: #f1f5f9; font-size: 1.2rem; font-weight: 700; margin-top: 40px; margin-bottom: 12px; }
+    h1 { color: var(--heading); font-size: 2rem; font-weight: 800; margin-bottom: 4px; letter-spacing: -0.02em; }
+    .updated { color: var(--dim); font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { color: var(--heading); font-size: 1.15rem; font-weight: 700; margin-top: 40px; margin-bottom: 12px; }
     p { margin-bottom: 12px; }
     ul { padding-left: 24px; margin-bottom: 12px; }
     li { margin-bottom: 6px; }
-    a { color: #22c55e; }
+    a { color: var(--accent); }
     a:hover { text-decoration: underline; }
-    .footer-note { color: #475569; font-size: 0.8rem; margin-top: 48px; }
+    .footer-note { color: var(--dim); font-size: 0.8rem; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
     strong { color: #e2e8f0; }
   </style>
 </head>
 <body>
 <main>
-  <a class="back" href="https://DiogoCDC.github.io/wcpredict/">← Accueil</a>
+  <a class="back" href="index.html">← Accueil</a>
+
+  <div class="site-header">
+    <img src="assets/icon.png" width="44" height="44" alt="">
+    <span>WorldCup Predict 2026</span>
+  </div>
 
   <h1>Conditions d'utilisation</h1>
-  <p class="updated">Dernière mise à jour : 2026-05-13</p>
-
-  <!-- IMPORTANT — DISCLAIMER FOR THE OPERATOR
-       This page is a STARTING TEMPLATE drafted by an AI assistant.
-       It is NOT legal advice. Have a lawyer review before publishing.
-       Fill in every {{PLACEHOLDER}} below.
-  -->
+  <p class="updated">Dernière mise à jour : 19 mai 2026</p>
 
   <section>
     <h2>1. Objet</h2>
     <p>Les présentes conditions régissent l'utilisation de l'application <strong>WorldCup Predict 2026</strong> (mobile), service gratuit de pronostics sur les matches de la Coupe du Monde de football 2026, avec achats in-app optionnels.</p>
-    <p>L'Application est éditée par : <strong>{{COMPANY_NAME}}</strong>, <strong>{{COMPANY_ADDRESS}}</strong>, contact : <strong>{{CONTACT_EMAIL}}</strong>.</p>
+    <p>L'Application est éditée par <strong>Makeenap</strong>, <strong>137 Louise Avenue, Brussels, Belgium</strong>, contact : <a href="mailto:rushmotoz325@gmail.com">rushmotoz325@gmail.com</a>.</p>
   </section>
 
   <section>
@@ -68,11 +99,11 @@
     <h2>5. Achats in-app</h2>
     <p>Deux types de produits sont proposés (prix indicatifs, hors taxes locales) :</p>
     <ul>
-      <li><strong>Accès anticipé — un match</strong> ({{PRICE_MATCH}} €) : débloque la répartition agrégée de votre ligue pour ce match avant le coup d'envoi.</li>
+      <li><strong>Accès anticipé — un match</strong> : débloquable gratuitement via publicité récompensée (limité à 3 utilisations par jour) ou inclus avec le Compte Pro.</li>
       <li><strong>Compte Pro — à vie</strong> (1,99 €) : supprime les publicités et donne accès anticipé aux statistiques de tous les matches.</li>
     </ul>
     <p>Les achats sont gérés par l'App Store Apple ou Google Play, via <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a>.</p>
-    <p><strong>Droit de rétractation :</strong> les contenus numériques fournis immédiatement après l'achat ne sont pas remboursables, conformément à l'article L221-28 13° du Code de la consommation. Pour tout litige, contactez-nous à <strong>{{CONTACT_EMAIL}}</strong>.</p>
+    <p><strong>Droit de rétractation :</strong> les contenus numériques fournis immédiatement après l'achat ne sont pas remboursables, conformément à l'article XI.53 du Code de droit économique belge. Pour tout litige, contactez-nous à <a href="mailto:rushmotoz325@gmail.com">rushmotoz325@gmail.com</a>.</p>
     <p><strong>Publicités récompensées :</strong> sur mobile, vous pouvez aussi débloquer un match en regardant une vidéo publicitaire. Cette option est gratuite, limitée à 3 utilisations par jour, et n'est jamais imposée.</p>
   </section>
 
@@ -83,7 +114,7 @@
 
   <section>
     <h2>7. Propriété intellectuelle</h2>
-    <p>Les logos, emblèmes et noms d'équipes sont la propriété de leurs détenteurs respectifs (FIFA, fédérations nationales). Nous les utilisons à des fins informatives, sans affiliation officielle. Le reste du contenu (graphismes, code, design) appartient à <strong>{{COMPANY_NAME}}</strong>.</p>
+    <p>Les logos, emblèmes et noms d'équipes sont la propriété de leurs détenteurs respectifs (FIFA, fédérations nationales). Nous les utilisons à des fins informatives, sans affiliation officielle. Le reste du contenu (graphismes, code, design) appartient à <strong>Makeenap</strong>.</p>
   </section>
 
   <section>
@@ -98,15 +129,15 @@
 
   <section>
     <h2>10. Droit applicable</h2>
-    <p>Les présentes conditions sont régies par le droit français. Tout litige relève de la compétence des tribunaux français, sauf dispositions impératives contraires applicables aux consommateurs.</p>
+    <p>Les présentes conditions sont régies par le droit belge. Tout litige relève de la compétence des tribunaux de Bruxelles, sauf dispositions impératives contraires applicables aux consommateurs.</p>
   </section>
 
   <section>
     <h2>11. Contact</h2>
-    <p>Pour toute question, écrivez-nous à <strong>{{CONTACT_EMAIL}}</strong>.</p>
+    <p>Pour toute question, écrivez-nous à <a href="mailto:rushmotoz325@gmail.com">rushmotoz325@gmail.com</a>.</p>
   </section>
 
-  <p class="footer-note">© 2026 {{COMPANY_NAME}} — Tous droits réservés.</p>
+  <p class="footer-note">© 2026 Makeenap — Tous droits réservés · <a href="privacy.html">Politique de confidentialité</a></p>
 </main>
 </body>
 </html>
